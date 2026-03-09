@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cut Lab | Premium Barbershop & Grooming</title>
+    <meta name="description" content="Precision cuts, modern style. Book your appointment or join the live walk-in queue at The Cut Lab.">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Iconify CDN -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E3A5F',
+                        secondary: '#F59E0B',
+                        background: '#FFFFFF',
+                        card: '#F8FAFC',
+                        textMain: '#1E293B',
+                        textHead: '#0F172A',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'none': '0',
+                        'sm': '0.125rem',
+                        DEFAULT: '0.25rem',
+                        'md': '6px',
+                        'lg': '8px',
+                        'full': '9999px',
+                    },
+                    boxShadow: {
+                        'sm': '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
+                        'md': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; color: #1E293B; background-color: #FFFFFF; }
+        h1, h2, h3, h4 { color: #0F172A; font-weight: 700; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold text-primary tracking-tight">The Cut Lab</a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-sm font-medium text-textMain hover:text-primary transition-colors">Home</a>
+                    <a href="#services" class="text-sm font-medium text-textMain hover:text-primary transition-colors">Services</a>
+                    <a href="#queue" class="text-sm font-medium text-textMain hover:text-primary transition-colors">Live Queue</a>
+                    <a href="#book" class="bg-primary text-white px-5 py-2 rounded-md text-sm font-semibold hover:bg-slate-800 transition-all shadow-sm">Book Now</a>
+                </nav>
+                <div class="md:hidden">
+                    <button type="button" class="text-primary p-2">
+                        <iconify-icon icon="lucide:menu" width="24"></iconify-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="pt-32 pb-20 lg:pt-48 lg:pb-32 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <span class="inline-block py-1 px-3 rounded-full bg-amber-100 text-secondary text-xs font-bold uppercase tracking-wider mb-4">Master Barbershop</span>
+                <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-6">
+                    Precision Cuts. <br class="hidden md:block"> <span class="text-primary">Modern Engineering.</span>
+                </h1>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10">
+                    Experience the science of style. From classic fades to modern grooming, we provide a premium experience tailored to your unique look.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#book" class="bg-primary text-white px-8 py-3 rounded-md font-bold text-lg hover:bg-slate-800 transition-all shadow-md flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:calendar-check"></iconify-icon>
+                        Book Appointment
+                    </a>
+                    <a href="#queue" class="bg-white text-primary border border-slate-200 px-8 py-3 rounded-md font-bold text-lg hover:bg-slate-50 transition-all shadow-sm flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:users"></iconify-icon>
+                        Join Walk-in Queue
+                    </a>
+                </div>
+                <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 opacity-60 grayscale">
+                    <div class="flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:scissors" width="24"></iconify-icon>
+                        <span class="font-semibold">Expert Cuts</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:clock" width="24"></iconify-icon>
+                        <span class="font-semibold">Live Queue</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:smartphone" width="24"></iconify-icon>
+                        <span class="font-semibold">SMS Alerts</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-2">
+                        <iconify-icon icon="lucide:award" width="24"></iconify-icon>
+                        <span class="font-semibold">Top Rated</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Our Services</h2>
+                    <p class="text-slate-500">Premium grooming services for the modern gentleman.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="p-8 bg-card rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6">
+                            <iconify-icon icon="lucide:scissors" width="24"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">The Signature Cut</h3>
+                        <p class="text-slate-600 mb-6">Precision haircut, neck shave, and style. Includes consultation.</p>
+                        <div class="flex justify-between items-center pt-6 border-t border-slate-200">
+                            <span class="text-2xl font-bold text-primary">$35</span>
+                            <span class="text-sm text-slate-400">30 Mins</span>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="p-8 bg-card rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6">
+                            <iconify-icon icon="lucide:brush" width="24"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Beard Sculpting</h3>
+                        <p class="text-slate-600 mb-6">Full beard trim, shaping, and hot towel finish with premium oils.</p>
+                        <div class="flex justify-between items-center pt-6 border-t border-slate-200">
+                            <span class="text-2xl font-bold text-primary">$25</span>
+                            <span class="text-sm text-slate-400">20 Mins</span>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="p-8 bg-card rounded-lg border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
+                        <div class="w-12 h-12 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6">
+                            <iconify-icon icon="lucide:sparkles" width="24"></iconify-icon>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">The Full Lab Works</h3>
+                        <p class="text-slate-600 mb-6">Signature cut, beard sculpt, and charcoal face mask treatment.</p>
+                        <div class="flex justify-between items-center pt-6 border-t border-slate-200">
+                            <span class="text-2xl font-bold text-primary">$55</span>
+                            <span class="text-sm text-slate-400">60 Mins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="book" class="py-20 bg-slate-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden border border-slate-200">
+                    <div class="bg-primary p-6 text-white">
+                        <h2 class="text-2xl font-bold text-white">Book Your Session</h2>
+                        <p class="text-slate-300 text-sm">Select your barber and preferred time.</p>
+                    </div>
+                    <div class="p-8">
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-textHead mb-2">Select Barber</label>
+                                    <select class="w-full bg-slate-50 border border-slate-200 rounded-md px-4 py-2 focus:ring-2 focus:ring-primary outline-none">
+                                        <option>Any Available Barber</option>
+                                        <option>Marcus (Master Barber)</option>
+                                        <option>Elena (Stylist)</option>
+                                        <option>Julian (Fades Expert)</option>
+                                        <option>Sarah (Classic Cuts)</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-textHead mb-2">Service</label>
+                                    <select class="w-full bg-slate-50 border border-slate-200 rounded-md px-4 py-2 focus:ring-2 focus:ring-primary outline-none">
+                                        <option>The Signature Cut</option>
+                                        <option>Beard Sculpting</option>
+                                        <option>The Full Lab Works</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-textHead mb-4">Available Times (Today)</label>
+                                <div class="grid grid-cols-3 sm:grid-cols-5 gap-3">
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-primary hover:text-primary transition-all">09:00 AM</button>
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-primary hover:text-primary transition-all">10:30 AM</button>
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md bg-primary text-white border-primary">11:15 AM</button>
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-primary hover:text-primary transition-all">01:00 PM</button>
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-primary hover:text-primary transition-all">02:30 PM</button>
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md border border-slate-200 bg-slate-100 text-slate-400 cursor-not-allowed" disabled>03:00 PM</button>
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-primary hover:text-primary transition-all">04:15 PM</button>
+                                    <button type="button" class="py-2 text-sm font-medium rounded-md border border-slate-200 hover:border-primary hover:text-primary transition-all">05:00 PM</button>
+                                </div>
+                            </div>
+
+                            <div class="pt-4">
+                                <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-md hover:bg-slate-800 transition-all shadow-sm">
+                                    Confirm Booking
+                                </button>
+                                <p class="text-center text-xs text-slate-400 mt-4">You will receive an SMS confirmation immediately.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Queue Section -->
+        <section id="queue" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">Live Walk-in Queue</h2>
+                        <p class="text-slate-500">Real-time wait times for non-appointment clients.</p>
+                    </div>
+                    <div class="bg-amber-50 border border-amber-100 p-4 rounded-lg flex items-center gap-4">
+                        <div class="text-center">
+                            <span class="block text-2xl font-bold text-secondary">25</span>
+                            <span class="text-[10px] uppercase font-bold text-amber-700">Min Wait</span>
+                        </div>
+                        <div class="h-10 w-px bg-amber-200"></div>
+                        <div class="text-center">
+                            <span class="block text-2xl font-bold text-secondary">3</span>
+                            <span class="text-[10px] uppercase font-bold text-amber-700">In Line</span>
+                        </div>
+                        <button class="ml-4 bg-secondary text-white px-4 py-2 rounded-md text-sm font-bold hover:bg-amber-600 transition-all">Join Line</button>
+                    </div>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Currently In Chair -->
+                    <div class="lg:col-span-2 space-y-4">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                            <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                            Currently in Chair
+                        </h3>
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="p-4 bg-card rounded-lg border-l-4 border-primary flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-primary">JD</div>
+                                    <div>
+                                        <p class="font-bold text-sm">John D.</p>
+                                        <p class="text-xs text-slate-500">with Marcus</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold text-primary bg-primary/5 px-2 py-1 rounded">12m left</span>
+                            </div>
+                            <div class="p-4 bg-card rounded-lg border-l-4 border-primary flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-bold text-primary">MK</div>
+                                    <div>
+                                        <p class="font-bold text-sm">Mike K.</p>
+                                        <p class="text-xs text-slate-500">with Elena</p>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-bold text-primary bg-primary/5 px-2 py-1 rounded">5m left</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Waiting List -->
+                    <div class="space-y-4">
+                        <h3 class="text-sm font-bold uppercase tracking-widest text-slate-400">Next in Line</h3>
+                        <div class="space-y-3">
+                            <div class="p-4 bg-white border border-slate-100 rounded-lg shadow-sm flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-lg font-bold text-slate-300">01</span>
+                                    <p class="font-bold text-sm">David R.</p>
+                                </div>
+                                <span class="text-xs text-slate-400">Est. 10m</span>
+                            </div>
+                            <div class="p-4 bg-white border border-slate-100 rounded-lg shadow-sm flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-lg font-bold text-slate-300">02</span>
+                                    <p class="font-bold text-sm">Sam L.</p>
+                                </div>
+                                <span class="text-xs text-slate-400">Est. 25m</span>
+                            </div>
+                            <div class="p-4 bg-white border border-slate-100 rounded-lg shadow-sm flex items-center justify-between">
+                                <div class="flex items-center gap-3">
+                                    <span class="text-lg font-bold text-slate-300">03</span>
+                                    <p class="font-bold text-sm">Chris P.</p>
+                                </div>
+                                <span class="text-xs text-slate-400">Est. 40m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-1">
+                    <span class="text-2xl font-bold text-white mb-6 block">The Cut Lab</span>
+                    <p class="text-sm leading-relaxed mb-6">
+                        The intersection of traditional barbering and modern technology. Precision grooming for the digital age.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="hover:text-secondary transition-colors"><iconify-icon icon="lucide:instagram" width="20"></iconify-icon></a>
+                        <a href="#" class="hover:text-secondary transition-colors"><iconify-icon icon="lucide:facebook" width="20"></iconify-icon></a>
+                        <a href="#" class="hover:text-secondary transition-colors"><iconify-icon icon="lucide:twitter" width="20"></iconify-icon></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#book" class="hover:text-white transition-colors">Book Appointment</a></li>
+                        <li><a href="#queue" class="hover:text-white transition-colors">Live Queue</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Hours</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex justify-between"><span>Mon - Fri</span> <span>9am - 8pm</span></li>
+                        <li class="flex justify-between"><span>Saturday</span> <span>10am - 6pm</span></li>
+                        <li class="flex justify-between"><span>Sunday</span> <span>Closed</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6">Location</h4>
+                    <p class="text-sm mb-4">
+                        123 Innovation Way<br>
+                        Tech District, SF 94105
+                    </p>
+                    <p class="text-sm font-bold text-white">
+                        (555) 123-4567
+                    </p>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+                <p>&copy; 2023 The Cut Lab. All rights reserved. Built for precision.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "projectId": "3e62b3d4",
+  "appName": "the-cut-lab",
+  "businessName": "The Cut Lab",
+  "features": [
+    "booking",
+    "walk-in-queue",
+    "client-crm",
+    "sms-reminders",
+    "commission-tracking"
+  ],
+  "businessInfo": {
+    "name": "The Cut Lab",
+    "address": "Detroit, MI",
+    "barber_count": 4,
+    "booking_system": "pen and paper"
+  },
+  "generatedDir": "/Users/dongsub/Documents/Potential/projects/hire-agent/agent-house-bot/generated/the-cut-lab-be6c3589",
+  "createdAt": "2026-03-09T16:17:03.214Z"
+}
